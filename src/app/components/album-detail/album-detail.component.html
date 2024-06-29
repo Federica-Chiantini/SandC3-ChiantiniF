@@ -1,9 +1,9 @@
-  <div *ngIf="insiemeFoto" class="d-flex flex-wrap d-grid gap-4">
+  <div *ngIf="insiemeFoto" class="d-flex flex-wrap d-grid gap-2 mt-2">
   <div class="card" style="width: 151px;" *ngFor="let foto of insiemeFoto">
     <a [href]=foto.url target="_blank"><img [src]=foto.thumbnailUrl [alt]=foto.title></a>
       <div class="card-body">
         <h5 class="card-title">{{foto.title}}</h5>
-        <p class="card-text">{{foto.albumId}}</p>
+        <p class="card-text">ID: {{foto.albumId}}</p>
       </div>
     </div>
   </div>
